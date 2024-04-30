@@ -7,3 +7,8 @@ week 4 : create a score indicator at the top center of my screen, going up every
 week 5 : get the blocks to move faster every score of 10 by 1.5x <br>
 week 6 : get the game to end when blocks dont fall on platform or stack on eachother when dropped. <br>
 week 7 : create a "game over" screen
+
+
+
+
+tutorial used: https://www.youtube.com/watch?v=YwnbqXQSHXw
