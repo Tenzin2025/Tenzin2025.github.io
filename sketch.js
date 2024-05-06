@@ -46,7 +46,11 @@ function updateBlock() {
   }
 }
 function drawBlocks() {
+  fill(250, 0, 0)
   rect(currentBlock.x, currentBlock.y, currentBlock.z, blockHeight);
+  for(let block of placedBlocks) {
+    rect(block.x, block.y, block.z, blockHeight);
+  }
 }
 
 function placeBlock() {
