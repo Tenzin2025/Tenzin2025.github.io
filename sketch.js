@@ -63,6 +63,9 @@ function placeBlock() {
   const rightEdge = min(prevBlock.x + prevBlock.z, currentBlock.x + currentBlock.z);
   
   newWidth = rightEdge - leftEdge;
+    
+    currentBlock.x= leftEdge;
+    currentBlock.z= newWidth;
   }
   
   placedBlocks.push(currentBlock);
@@ -73,3 +76,4 @@ function placeBlock() {
 function newBlock(newWidth) {
   const blockStackHeight= (placedBlocks.length + 1) * blockHeight;
   currentBlock = createVector(0, height - blockStackHeight, newWidth);
+}
