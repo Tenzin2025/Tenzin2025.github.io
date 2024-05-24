@@ -69,6 +69,10 @@ function placeBlock() {
     currentBlock.x = leftEdge;
     currentBlock.z = newWidth;
   }
+  
+  if(newWidth < 0) {
+    console.log("GAME OVER!");
+  }
 
   placedBlocks.push(currentBlock);
 
