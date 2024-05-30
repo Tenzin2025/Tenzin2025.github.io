@@ -1,5 +1,5 @@
-const blockWidth = 250;
-const blockHeight = 30;
+const blockWidth = 150;
+const blockHeight = 20;
 let currentBlock;
 
 let blockDir;
@@ -10,7 +10,7 @@ let score = 0;
 let placedBlocks = [];
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(350, 500);
   newGame();
 }
 
@@ -72,6 +72,8 @@ function placeBlock() {
   
   if(newWidth < 0) {
     console.log("GAME OVER!");
+    newGame();
+    return;
   }
 
   placedBlocks.push(currentBlock);
@@ -79,7 +81,7 @@ function placeBlock() {
   dropCount++;
 
   if (dropCount % 2 === 0) {
-    blockSpeed += 1; 
+    blockSpeed += .5; 
   }
 
   score++; 
